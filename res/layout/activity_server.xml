@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <SurfaceView
+        android:id="@+id/sfv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:alpha="0" />
+    
+    <FrameLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9900aa" >
+
+        <RelativeLayout
+            android:id="@+id/layout_normal_mode_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/img_normal_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_normal_dsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/img_normal_icon"
+                android:layout_centerInParent="true"
+                android:text="@string/normal_dsp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout_game_mode_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/img_game_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_game_dsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/img_game_icon"
+                android:layout_centerInParent="true"
+                android:text="@string/game_dsp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout_edu_mode_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/img_edu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_edu_dsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/img_edu_icon"
+                android:layout_centerInParent="true"
+                android:text="@string/edu_dsp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

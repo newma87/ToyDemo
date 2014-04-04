@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartToy</string>
+    <string name="app_server">SmartToy</string>
+    <string name="app_client">STControl</string>
+    <string name="img_chara_desc">CharactorImage</string>
+    <string name="normal_dsp">普通模式</string>
+    <string name="game_dsp">游戏模式</string>
+    <string name="edu_dsp">学习模式</string>
+    <string name="speak">讲话</string>
+    <string name="music">音乐</string>
+    <string name="recognize">语音</string>
+    <string name="dance">跳舞</string>
+    <string name="main_tip">请选择要使用的方式：</string>
+    <string name="server">服务端</string>
+    <string name="controller">遥控器</string>
+    <string name="research">重新搜索</string>
+    <string name="useQRCode">扫描二维码</string>
+    <string name="default_ip">0.0.0.0</string>
+
+</resources>

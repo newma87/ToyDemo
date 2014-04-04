@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_client"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_vedio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_control"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp" >
+
+        <com.smarttoy.client.ui.VirtualJoyStick
+            android:id="@+id/virtual_joy_stick"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_button"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="36dp" >
+
+            <Button
+                android:id="@+id/btn_speak"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_default"
+                android:text="@string/speak"
+                android:textColor="#e34431" />
+
+            <Button
+                android:id="@+id/btn_music"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_default"
+                android:text="@string/music"
+                android:textColor="#e34431" />
+
+            <Button
+                android:id="@+id/btn_rec"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_default"
+                android:text="@string/recognize"
+                android:textColor="#e34431" />
+
+            <Button
+                android:id="@+id/btn_dance"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_default"
+                android:text="@string/dance"
+                android:textColor="#e34431" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+</RelativeLayout>
